@@ -1,0 +1,45 @@
+.logo{
+   width: 46px;
+   height: 46px;
+   margin-left: 10px;
+   margin-top: 10px;
+   float: left;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333333;
+  float: none;
+}
+
+.navbar li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar a{
+  text-decoration: none;
+  float: right;
+  text-align: center;
+  padding: 16px;
+  display: block;
+  font-size: 17px;
+  color: #ffffff;
+  margin-left: 10px;
+
+}
+
+.navbar a:hover{
+  background-color: #666666;
+}
+
+@media screen and (max-width: 600px) {
+.navbar {
+float: none;
+dislay: block;
+text-align: left;
+width: 100%;
+margin: 0;
+padding: 14px;
+  }
+}
