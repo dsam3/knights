@@ -58,12 +58,12 @@ nav a:hover{
 
 body {
   margin: 0px;
-  scroll-behavior: smooth;
-  box-sizing: border-box;
 }
 
 .wrapper {
 	margin-top: 100px;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 .performance-centre {
