@@ -3,7 +3,6 @@
   <link rel="stylesheet" type="text/css" href="main.css">
   <script src="slideshow.js"></script>
   <title>Northside Knights</title>
-
 	<nav>
 <div class="logo">
   <img src="https://github.com/dsam3/northside-knights/blob/main/NORTHSIDE%20KNIGHTS%20LOGO%20TRANSPARENT.png?raw=true" alt="Northside Knights Logo" width="170" height="150">
@@ -21,8 +20,8 @@
   <div class="wrapper">
 
 
-ASK FOR HELP ON HOW TO GET THE SLIDESHOW WORKING
-SLIDESHOW DOESNT SHOW UP
+<!--ASK FOR HELP ON HOW TO GET THE SLIDESHOW WORKING
+SLIDESHOW DOESNT SHOW UP-->
 <div class="performance-centre">
   <div class="title1">
       <h1>Knights Performance Centre</h1>
@@ -30,15 +29,15 @@ SLIDESHOW DOESNT SHOW UP
     <div class="slideshow">
 
         <div class="slides">
-          <img src="https://github.com/dsam3/northside-knights/blob/151fcee001820f4586e4799ddfec6c9b79de3cbc/media/sample1.jpg?raw=true" width="100%">
+          <img src="https://github.com/dsam3/northside-knights/blob/main/media/sample1.jpg?raw=true" width="100%">
         </div>
 
         <div class="slides">
-          <img src="https://github.com/dsam3/northside-knights/blob/151fcee001820f4586e4799ddfec6c9b79de3cbc/media/sample2.jpg?raw=true" width="100%">
+          <img src="https://github.com/dsam3/northside-knights/blob/main/media/sample2.jpg?raw=true" width="100%">
         </div>
 
         <div class="slides">
-          <img src="https://github.com/dsam3/northside-knights/blob/151fcee001820f4586e4799ddfec6c9b79de3cbc/media/sample3.jpg?raw=true" width="100%">
+          <img src="https://github.com/dsam3/northside-knights/blob/main/media/sample3.jpg?raw=true" width="100%">
         </div>
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -51,10 +50,13 @@ SLIDESHOW DOESNT SHOW UP
     <span class="dot" onclick="currentSlide(3)"></span>
 
 </div>
+<script>
+  showSlides(slideIndex);
+</script>
 </div>
 </div>
 
-<div class="what-is">
+<div class="what-is" id="knights">
 
   <div class="title1">
     <h1>What is Northside Knights?</h1>
@@ -65,19 +67,49 @@ SLIDESHOW DOESNT SHOW UP
 <!--LOOK AT IN-CLASS EXAMPLES OF HOW TO MAKE GRID COLUMNS WITH CONTENT IN IT FOR CLARIFICATION-->
 
 		<div class="column1">
-
+      <img src="https://github.com/dsam3/northside-knights/blob/main/media/grey.jpg?raw=true" width: "300" height="300">
+      <div class="grid-heading-1">
+        <h3>Lorem ipsum dolor sit amet</h3>
+          </div>
+          <div class="grid-content-1">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum mauris ut diam vulputate, nec scelerisque magna maximus. Suspendisse sit amet ex vestibulum, semper nunc quis, consequat arcu. Pellentesque feugiat molestie enim a aliquam. </p>
+          </div>
 		</div>
+
+    <div class="column1">
+      <img src="https://github.com/dsam3/northside-knights/blob/main/media/grey.jpg?raw=true">
+      <div class="grid-heading-1">
+        <h3>Lorem ipsum dolor sit amet</h3>
+          </div>
+          <div class="grid-content-1">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum mauris ut diam vulputate, nec scelerisque magna maximus. Suspendisse sit amet ex vestibulum, semper nunc quis, consequat arcu. Pellentesque feugiat molestie enim a aliquam. </p>
+          </div>
+    </div>
+
+    <div class="column1">
+      <img src="https://github.com/dsam3/northside-knights/blob/main/media/grey.jpg?raw=true">
+      <div class="grid-heading-1">
+        <h3>Lorem ipsum dolor sit amet</h3>
+          </div>
+          <div class="grid-content-1">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vestibulum mauris ut diam vulputate, nec scelerisque magna maximus. Suspendisse sit amet ex vestibulum, semper nunc quis, consequat arcu. Pellentesque feugiat molestie enim a aliquam. </p>
+          </div>
+    </div>
 
   </div>
 
 
     </div>
 
-    <div class="timetable">
+    <div class="timetable" id="timetable">
       <div class="title2">
         <h1>Performance Centre Timetable</h1>
         <img src="https://github.com/dsam3/northside-knights/blob/015d621877dee7fc15d959fcf7b038100906e4b8/media/timetable.png?raw=true">
       </div>
+    </div>
+
+    <div class="bos-sports" id="bos-sports">
+
     </div>
 
 </div>

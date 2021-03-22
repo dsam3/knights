@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 :root {
   --green: #0E9548;
   --blue: #2A59A7;
   --white: #FFFFFF;
+  --lightgreen: #28B34C;
 }
 
 .logo{
@@ -26,21 +27,23 @@ nav {
 }
 nav ul {
   height: 100px;
+
 }
 
 nav li {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
+  margin-top: 50px;
 }
 
 nav a{
   font-family: 'Lato', sans-serif;
   font-size: 20px;
+  font-weight: 700;
   text-decoration: none;
   float: right;
   text-align: center;
-  padding: 50px;
+  padding: 20px;
+  margin-right: 50px;
   display: block;
   color: var(--white);
   margin-left: 10px;
@@ -48,7 +51,8 @@ nav a{
 }
 
 nav a:hover{
-box-shadow: 5px 10px #888888;
+  color: var(--blue);
+  background-color: var(--white);
 }
 
 body {
@@ -70,7 +74,14 @@ body {
   font-family: 'Lato', sans-serif;
   color: var(--white);
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
+}
+
+.title2{
+  font-family: 'Lato', sans-serif;
+  color: var(--blue);
+  text-align: center;
+  font-size: 30px;
 }
 
 h1 {
@@ -78,19 +89,44 @@ h1 {
   padding: 50px;
 }
 
-.title2{
-  font-family: 'Lato', sans-serif;
-  color: var(--blue);
+.grid-container {
+  display: grid;
+  background-color: var(--blue);
+  grid-template-columns: repeat(3, 1fr);
+  float: none;
+  align-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.what-is {
+	background-color: var(--blue)
+}
+
+.column1 {
+  max-width: 300px;
+}
+
+.grid-heading-1 {
+  color: var(--lightgreen);
   text-align: center;
-  font-size: 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+.grid-content-1{
+  color: var(--white);
+  font-family: 'Lato', sans-serif;
+  font-weight: 400px;
+  font-size: 15px;
+  text-align: center;
 }
 
 .slideshow {
-  max-width: 750px;
+  max-width: 1000px;
   margin: auto;
 	position: relative;
-  box-sizing: border-box
-	z-index: 0;
+  box-sizing: border-box;
 
 }
 
@@ -178,16 +214,6 @@ h1 {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
-}
-
-.grid-container {
-  display: grid;
-  color: var(--blue)
-  grid-templates-columns: repeat(3, 1fr);
-}
-
-.what-is {
-	background-color: var(--blue)
 }
 
 @media screen and (max-width: 600px) {
