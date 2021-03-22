@@ -6,11 +6,6 @@
   --white: #FFFFFF;
 }
 
-body {
-  margin: 0px;
-  scroll-behavior: smooth;
-  box-sizing: border-box;
-}
 .logo{
    margin-left: 10px;
    margin-top: 10px;
@@ -27,6 +22,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
+	z-index: 1;
 }
 nav ul {
   height: 100px;
@@ -55,6 +51,16 @@ nav a:hover{
 box-shadow: 5px 10px #888888;
 }
 
+body {
+  margin: 0px;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+.wrapper {
+	margin-top: 100px;
+}
+
 .performance-centre {
   background-color: var(--green);
   padding: 20px;
@@ -74,9 +80,10 @@ box-shadow: 5px 10px #888888;
 
 .slideshow {
   max-width: 1000px;
-  position: relative;
   margin: auto;
+	position: relative;
   box-sizing: border-box
+	z-index: 0;
 
 }
 
@@ -93,7 +100,7 @@ box-shadow: 5px 10px #888888;
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: var(--white);
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -169,9 +176,11 @@ box-shadow: 5px 10px #888888;
 .grid-container {
   display: grid;
   color: var(--blue)
+  grid-templates-columns: repeat(3, 1fr);
 }
 
 .what-is {
+	background-color: var(--blue)
 }
 
 @media screen and (max-width: 600px) {
