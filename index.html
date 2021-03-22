@@ -1,101 +1,195 @@
-<html>
-<head>
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <script src="slideshow.js"></script>
-  <title>Northside Knights</title>
-	
-	<nav>
-<div class="logo">
-  <img src="https://github.com/dsam3/northside-knights/blob/main/NORTHSIDE%20KNIGHTS%20LOGO%20TRANSPARENT.png?raw=true" alt="Northside Knights Logo" width="170" height="150">
-  </div>
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 
-<ul>
-  <li><a href="#contact-us">Contact Us</a></li>
-	<li><a href="#bos-sports">BOS Sports</a ></li>
-  <li><a href="#timetable">Timetable</a></li>
-  <li><a href="#knights">What Is Northside Knights?</a></li>
-</ul>
-</nav>
-</head>
-<body>
-  <div class="wrapper">
-		
+:root {
+  --green: #0E9548;
+  --blue: #2A59A7;
+  --white: #FFFFFF;
+}
 
-ASK FOR HELP ON HOW TO GET THE SLIDESHOW WORKING
-SLIDESHOW DOESNT SHOW UP
-<div class="performance-centre">
-  <div class="title1">
-      <h1>Knights Performance Centre</h1>
-  </div>
-    <div class="slideshow">
+.logo{
+   margin-left: 10px;
+   margin-top: 10px;
+   float: left;
+   overflow: auto;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+nav {
+  overflow: hidden;
+  background-color: var(--green);
+  float: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+	z-index: 1;
+}
+nav ul {
+  height: 100px;
+}
 
-        <div class="slides">
-          <img src="https://github.com/dsam3/northside-knights/blob/151fcee001820f4586e4799ddfec6c9b79de3cbc/media/sample1.jpg?raw=true" width="100%">
-        </div>
+nav li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
-        <div class="slides">
-          <img src="https://github.com/dsam3/northside-knights/blob/151fcee001820f4586e4799ddfec6c9b79de3cbc/media/sample2.jpg?raw=true" width="100%">
-        </div>
+nav a{
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  float: right;
+  text-align: center;
+  padding: 50px;
+  display: block;
+  color: var(--white);
+  margin-left: 10px;
 
-        <div class="slides">
-          <img src="https://github.com/dsam3/northside-knights/blob/151fcee001820f4586e4799ddfec6c9b79de3cbc/media/sample3.jpg?raw=true" width="100%">
-        </div>
+}
 
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-  <br>
+nav a:hover{
+box-shadow: 5px 10px #888888;
+}
 
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
+body {
+  margin: 0px;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
 
-</div>
-</div>
+.wrapper {
+	margin-top: 100px;
+}
 
-<div class="what-is">
+.performance-centre {
+  background-color: var(--green);
+  padding: 20px;
+}
 
-  <div class="title1">
-    <h1>What is Northside Knights?</h1>
-  </div>
+.title1{
+  font-family: 'Lato', sans-serif;
+  color: var(--white);
+  text-align: center;
+}
 
-  <div class="grid-container">
+.title2{
+  font-family: 'Lato', sans-serif;
+  color: var(--blue);
+  text-align: center;
+}
 
-<!--LOOK AT IN-CLASS EXAMPLES OF HOW TO MAKE GRID COLUMNS WITH CONTENT IN IT FOR CLARIFICATION-->
+.slideshow {
+  max-width: 1000px;
+  margin: auto;
+	position: relative;
+  box-sizing: border-box
+	z-index: 0;
 
-		<div class="column1">
-			
-		</div>
-		
-  </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
+}
 
-<div class="timetable">
-  <div class="title2">
-    <h1>Performance Centre Timetable</h1>
-    <img src="https://github.com/dsam3/northside-knights/blob/015d621877dee7fc15d959fcf7b038100906e4b8/media/timetable.png?raw=true">
-  </div>
-</div>
+/* Hide the images by default */
+.slides {
+  display: none;
+}
 
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
 
-</div>
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
 
-    </div>
-</div>
-</body>
-</html>
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.grid-container {
+  display: grid;
+  color: var(--blue)
+  grid-templates-columns: repeat(3, 1fr);
+}
+
+.what-is {
+	background-color: var(--blue)
+}
+
+@media screen and (max-width: 600px) {
+nav {
+float: none;
+dislay: block;
+text-align: left;
+width: 100%;
+margin: 0;
+padding: 14px;
+  }
+}
