@@ -6,7 +6,7 @@
   --white: #FFFFFF;
   --lightgreen: #28B34C;
   --grey: #BBBBBB;
-  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  --shadow: #333333;
 }
 
 .logo{
@@ -73,6 +73,7 @@ nav a:hover{
   background-color: var(--white);
 }
 
+
 body {
   margin: 0px;
 }
@@ -81,6 +82,10 @@ body {
 	margin-top: 100px;
   scroll-behavior: smooth;
   box-sizing: border-box;
+}
+
+.anchor {
+  scroll-margin-top: 130px;
 }
 
 .performance-centre {
@@ -113,7 +118,7 @@ h1 {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.what-is {
+#knights {
 	background-color: var(--blue);
 }
 
@@ -234,7 +239,7 @@ h1 {
   to {opacity: 1}
 }
 
-.bos-sports {
+#bos-sports {
   background-color: var(--green);
   margin-bottom: 50px;
 }
@@ -243,34 +248,27 @@ h1 {
   display: grid;
   background-color: var(--green);
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  margin-bottom: 50px;
+  grid-gap: 20px;
+  margin: 50px;
+  box-sizing: border-box;
+
 }
 
 
 .column2 {
   background-color: var(--white);
   border-radius: 20px;
-  box-shadow: var(--shadow);
   font-family: 'Lato';
-  grid-gap: 20px;
-}
-
-.round-image{
-  height: 200px;
-  width: 200px;
-  background-color: var(--grey);
-  border-radius: 50%;
-  display: flex;
-  margin-left: 40px;
-  margin-right: 40px;
-  align-content: center;
-
+  text-align: center;
+  padding: 20px;
+  box-shadow: 3px 10px 10px var(--shadow);
 }
 
 .grid-heading-2 {
   font-size: 1.5rem;
   margin-bottom: 0;
-  color: var(--blue);
+  color: var(--green);
+  margin: 10px;
 }
 
 .grid-content-2{
@@ -278,14 +276,17 @@ h1 {
   margin-top: 0;
   color: var(--blue);
   font-stretch: condensed;
+  margin: 10px;
 }
 
-.contact-us{
-  background-color: var(--white)
+#contact-us{
+  background-color: var(--white);
+  text-align: center;
+  vertical-align: middle;
 }
 
 .google-form {
-  align-content: center;
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 600px) {
