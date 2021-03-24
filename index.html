@@ -1,34 +1,43 @@
 <html>
 <head>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="HandheldFriendly" content="true">
   <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="slideshow.js"></script>
   <title>Northside Knights</title>
-	<nav>
-<div class="logo">
+
+	<nav class="topnav" id="myTopnav">
+<div class="logo" id="main-heading">
   <img src="https://github.com/dsam3/northside-knights/blob/main/NORTHSIDE%20KNIGHTS%20LOGO%20TRANSPARENT.png?raw=true" alt="Northside Knights Logo" width="120" height="110" autofocus>
   </div>
-
-<ul>
-  <li><a href="#contact-us">Contact Us</a></li>
-	<li><a href="#bos-sports">BOS Sports</a ></li>
-  <li><a href="#timetable">Timetable</a></li>
-  <li><a href="#knights">What Is Northside Knights?</a></li>
+<ul class="heading-list" id="main-heading">
   <li class="heading">Knights Performance Centre</li>
+  <li><a class="nav-link" href="#contact-us">Contact Us</a></li>
+	<li><a class="nav-link" href="#bos-sports">BOS Sports</a ></li>
+  <li><a class="nav-link" href="#timetable">Timetable</a></li>
+  <li><a class="nav-link" href="#knights">What Is Northside Knights?</a></li>
+
+  <li><a class="nav-link-2" href="#knights">What Is Northside Knights?</a></li>
+  <li><a class="nav-link-2" href="#timetable">Timetable</a></li>
+  <li><a class="nav-link-2" href="#bos-sports">BOS Sports</a ></li>
+  <li><a class="nav-link-2" href="#contact-us">Contact Us</a></li>
 </ul>
 </nav>
+<script type="text/javascript">
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+});
+</script>
 </head>
 <body>
-  <script type="text/javascript">
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-      });
-  });
-});
-  </script>
   <div class="wrapper">
 
 
@@ -156,18 +165,27 @@ SLIDESHOW DOESNT SHOW UP-->
         </div>
 
       </section>
+    </div>
 
-      <div class="anchor" id="contact-us">
-        <div class="title2">
-          <h1>Contact Us</h1>
-        </div>
-        <div class="google-form">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeGK_xzrX3Q1AVjXKZEkWmWLcvb9SIJY-9bUYlmKq6o3-lcWQ/viewform?embedded=true" width="1920" height="1080" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
+    <div class="anchor" id="contact-us">
+      <div class="title2">
+        <h1>Contact Us</h1>
       </div>
-
+      <div class="google-form">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeGK_xzrX3Q1AVjXKZEkWmWLcvb9SIJY-9bUYlmKq6o3-lcWQ/viewform?embedded=true" width="1920" height="1080" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
     </div>
 
 </div>
+<script type="text/javascript">
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </body>
 </html>
